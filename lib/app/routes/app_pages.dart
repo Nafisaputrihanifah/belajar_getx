@@ -1,11 +1,15 @@
 import 'package:get/get.dart';
 
+import '../modules/buttom-menu/bindings/buttom_menu_binding.dart';
+import '../modules/buttom-menu/views/buttom_menu_view.dart';
 import '../modules/counter/bindings/counter_binding.dart';
 import '../modules/counter/views/counter_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
+import '../modules/profil/bindings/profil_binding.dart';
+import '../modules/profil/views/profil_view.dart';
 import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
 
@@ -36,6 +40,16 @@ class AppPages {
       name: _Paths.REGISTER,
       page: () => const RegisterView(),
       binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: _Paths.PROFIL,
+      page: () =>  ProfilView(),
+      binding: ProfilBinding(),
+    ),
+    GetPage(
+      name: _Paths.BUTTOM_MENU,
+      page: () => const ButtomMenuView(),
+      binding: ButtomMenuBinding(),
     ),
   ];
 }
