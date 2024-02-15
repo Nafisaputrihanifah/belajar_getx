@@ -9,6 +9,7 @@ abstract class Routes {
   static const REGISTER = _Paths.REGISTER;
   static const PROFIL = _Paths.PROFIL;
   static const BUTTOM_MENU = _Paths.BUTTOM_MENU;
+  static const PASIEN = _Paths.PASIEN;
 }
 
 abstract class _Paths {
@@ -19,4 +20,8 @@ abstract class _Paths {
   static const REGISTER = '/register';
   static const PROFIL = '/profil';
   static const BUTTOM_MENU = '/buttom-menu';
+  static const PASIEN = '/pasien';
+  static const String TambahPasien = '/tambah-pasien';
+  static const String EditPasien = '/edit-pasien';
+  static const String DetailPasien = '/edit-pasien';
 }
